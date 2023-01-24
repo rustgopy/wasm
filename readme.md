@@ -23,6 +23,8 @@ initWasm("xxx/xxx/xxx.wasm")
 
 #### 二、WASM文档
 
+- 版本v0.0.1，下载地址：https://github.com/rustgopy/wasm/releases
+
 <details>
   <summary>1.人脸识别WASM</summary>
 
