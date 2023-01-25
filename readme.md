@@ -114,3 +114,8 @@ window.Search(ip)
 #### 五、微信二维码
 
 ![微信](image/wx.jpeg)
+
+
+#### Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/rustgopy/wasm.svg)](https://starchart.cc/rustgopy/wasm)
