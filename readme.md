@@ -92,6 +92,31 @@ window.Search(ip)
 
 </details>
 
+<details>
+  <summary>5.手机号归属地WASM</summary>
+
+```js
+// phone->手机号
+window.ChinaPhone(phone)
+```
+
+![手机号归属地WASM](image/wasm_china_phone.png)
+
+</details>
+
+<details>
+  <summary>6.身份证查询WASM</summary>
+
+```js
+// idCard->身份证号码
+// isStrict->严格模式：开启、关闭
+window.ChinaIDCard(idCard, isStrict)
+```
+
+![身份证查询WASM](image/wasm_china_id_card.png)
+
+</details>
+
 #### 三、联系作者
 
 - 作者：张金龙
@@ -114,7 +139,6 @@ window.Search(ip)
 #### 五、微信二维码
 
 ![微信](image/wx.jpeg)
-
 
 #### Stargazers over time
 
