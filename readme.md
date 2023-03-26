@@ -23,14 +23,17 @@ initWasm("xxx/xxx/xxx.wasm")
 
 #### 二、WASM文档
 
-- 最新版本v0.0.1，下载地址：https://github.com/rustgopy/wasm/releases
+- 最新版本v0.0.3，下载地址：https://github.com/rustgopy/wasm/releases
 
 <details>
   <summary>1.人脸识别WASM</summary>
 
 ```js
+// 初始化加载图片
+window.InitTestImage(JSON.stringify({Img: Array.from(imageByte)}))
+
+// 识别
 let params = JSON.stringify({
-    Img: Array.from(imageByte), // 图片字节码
     Shape: shape, // 形状框：rect（正方形）、circle（圆形）、ellipse（椭圆）
     FaceParam: {
         Angle: angle, // 弧度：0.0~1.0，默认0.0
@@ -114,6 +117,41 @@ window.ChinaIDCard(idCard, isStrict)
 ```
 
 ![身份证查询WASM](image/wasm_china_id_card.png)
+
+</details>
+
+<details>
+  <summary>7.HTTPS证书自签名生成器WASM</summary>
+
+```js
+let params = JSON.stringify({
+    "country": "中国", // 国家
+    "province": "云南省", // 省份
+    "locality": "昆明市", // 城市
+    "street_address": "官渡区矣六街道", // 街道
+    "postal_code": "650000", // 邮编
+    "organization": "汇聚云南特产", // 公司
+    "organizational_unit": "市场部", // 部门
+    "common_name": "www.rustgopy.com", // 域名
+    "date": "2024-12-31" // 截止日期
+})
+window.GenerateCA(params)
+```
+
+![身份证查询WASM](image/wasm_generate_ssl.png)
+
+</details>
+
+<details>
+  <summary>8.常见数据正则校验WASM</summary>
+
+```js
+// cate->分类：date（日期）、email（邮箱）、phone（手机号码）、telephone（电话号码）、postcode（邮政编码）、qq（QQ号码）、ipv4（IPv4地址）、ipv6（IPv6地址）、ip（IP地址）、mac（MAC地址）、url（URL地址）、domain（域名）、resident-id（身份证号码）、bank-card（银行卡号码）
+// data->数据
+window.CheckData(cate, data)
+```
+
+![身份证查询WASM](image/wasm_data_check.png)
 
 </details>
 
