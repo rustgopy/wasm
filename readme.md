@@ -23,7 +23,7 @@ initWasm("xxx/xxx/xxx.wasm")
 
 #### 二、WASM文档
 
-- 最新版本v0.0.3，下载地址：https://github.com/rustgopy/wasm/releases
+- 最新版本v0.0.4，下载地址：https://github.com/rustgopy/wasm/releases
 
 <details>
   <summary>1.人脸识别WASM</summary>
@@ -152,6 +152,33 @@ window.CheckData(cate, data)
 ```
 
 ![身份证查询WASM](image/wasm_data_check.png)
+
+</details>
+
+<details>
+  <summary>9.MarkDown文档转HTML代码WASM</summary>
+
+```js
+// content->markdown文本内容
+window.MarkdownToHtml(content)
+```
+
+![MarkDown文档转HTML代码WASM](image/wasm_markdown_to_html.png)
+
+</details>
+
+<details>
+  <summary>10.八卦加解密算法WASM</summary>
+
+```js
+// 加密：textPlain->明文
+window.BgEn(textPlain)
+
+// 解密：textSecret->密文
+window.BgDe(textSecret)
+```
+
+![八卦加解密算法WASM](image/wasm_encrypt_bg.png)
 
 </details>
 
